@@ -22,9 +22,6 @@ vector<string> getWords(int N, string str) {
             word = "";
             continue;
         } else {
-            if (static_cast<unsigned char>(x) > 127) {
-                continue;
-            }
             word = word + x;
         }
     }
