@@ -18,7 +18,7 @@ int main() {
     char s[size_str];
     char words[count_words][size_word];
 
-    cout << "Введите строку: " << endl;
+    cout << "Введите строку: ";
     cin.get(s, size_word);
     cout << endl;
 
@@ -44,7 +44,7 @@ int main() {
 
         //Подсчитываем кол-во слов, длина которых = word_l и копируем в массив слов
         if (size == word_l) {
-            strncpy_s(*(words + count), pss, word_l);
+            strncpy(*(words + count), pss, word_l);
             ++count;
         }
     }
